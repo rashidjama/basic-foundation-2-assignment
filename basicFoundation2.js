@@ -26,12 +26,12 @@ function lowHigh(arr) {
 // console.log(lowHigh([1,-4,50,-400]))
 
 // Print One, Return Another - Build a function that takes in an array of numbers.  The function should print the second-to-last value in the array, and return the first odd value in the array.
-function printReturn(arr){
-  console.log(arr[arr.length-2]);
-  for (var i = 0; i < arr.length; i++){
-      if (arr[i] % 2 == 1){
-          return arr[i];
-      }
+function printReturn(arr) {
+  console.log(arr[arr.length - 2]);
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 1) {
+      return arr[i];
+    }
   }
 }
 // console.log(printReturn([6,3,7,8,9,32,5]));
@@ -61,20 +61,20 @@ function countPositives(arr) {
 
 // Evens and Odds - Create a function that accepts an array.  Every time that array has three odd values in a row, print "That's odd!".  Every time the array has three evens in a row, print "Even more so!".
 function oddsEvens(arr) {
-  let evensCount =0;
-    let OddsCount = 0;
-  for(let i=0; i<arr.length;i++) {
-    if(arr[i] % 2 !== 0) {
+  let evensCount = 0;
+  let OddsCount = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
       OddsCount++;
-    }else {
+    } else {
       evensCount++;
     }
-    if(OddsCount === 3) {
+    if (OddsCount === 3) {
       console.log("That is odd!")
-      OddsCount =0;
-    }  else if(evensCount === 3) {
+      OddsCount = 0;
+    } else if (evensCount === 3) {
       console.log('Even more so!')
-      evensCount =0;
+      evensCount = 0;
     }
   }
 }
@@ -143,9 +143,9 @@ function hungry(arr) {
     if (arr[i] === 'food') {
       console.log('yummy')
       notHungry = true;
-    } 
+    }
   }
-  if(notHungry === false) {
+  if (notHungry === false) {
     console.log("I'm hungry!")
   }
 }
@@ -157,9 +157,9 @@ function swapTowardCenter(arr) {
   arr[0] = arr[arr.length - 1];
   arr[arr.length - 1] = temp;
   let temp2 = arr[2];
-  arr[2] = arr[arr.length-3];
-  arr[arr.length-3] = temp2;
-  
+  arr[2] = arr[arr.length - 3];
+  arr[arr.length - 3] = temp2;
+
 }
 // console.log(swapTowardCenter([1,2,3,4,5,6]))
 
